@@ -126,7 +126,7 @@ body {
   text-decoration: underline;
 }
 
-@keyframes DropdownActive {
+@keyframes fadeIn {
   from {
     visibility: hidden;
   }
@@ -143,15 +143,13 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  animation-name: fadeIn;
-  animation-duration: .5s;
   animation-fill-mode: forwards;
 }
 
 .dropdowm__content--active {
   visibility: visible;
   animation-name: fadeIn;
-  animation-duration: .5s;
+  animation-duration: 1s;
 }
 
 .dropdowm__item {
@@ -172,7 +170,7 @@ body {
 .dropdowm__item:hover {
   font-weight: 600;
   animation-name: Weight;
-  animation-duration: 1s;
+  animation-duration: .3s;
 }
 
 .button {
