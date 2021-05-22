@@ -264,6 +264,11 @@ body {
 }
 
 .container {
+  color: #2c2d3f;
+  font-weight: 300;
+}
+
+.container__content{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5px;
@@ -271,13 +276,11 @@ body {
   align-items: center;
   margin: 75px auto;
   padding: 0 0 0 60px;
-  color: #2c2d3f;
-  font-weight: 300;
   max-width: 1500px;
   animation: float 2s;
 }
 
-.container--reverse {
+.container__content--reverse {
   padding: 0 20px 0 0;
 }
 
@@ -326,7 +329,7 @@ body {
 }
 
 @media (max-width: 415px) {
-  .container {
+  .container__content {
     margin: 25px auto;
     text-align: center;
     padding: 0 10px;
